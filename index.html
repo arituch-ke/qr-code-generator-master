@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Section for Enter an URL to QR code -->
+      <img class="title" src="resources/Logo.svg" alt="QR Code Generator" />
+      <div class="input-group" id="input-group">
+        <input type="url" id="url-input" placeholder="Enter an url" />
+        <button id="generate-btn">QR code</button>
+      </div>
+
+      <!-- Section for QR Code -->
+      <div class="qr-code" id="qr-code"></div>
+      <div class="actions" id="actions">
+        <button id="download-btn">
+          Download
+          <img src="resources/Load_circle_duotone.svg" alt="Download" />
+        </button>
+        <button id="share-btn">
+          Share
+          <img src="resources/link_alt.svg" alt="Share" />
+        </button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
